@@ -4,14 +4,25 @@
   box-sizing: border-box;
 }
 
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+::-webkit-input-placeholder {
+	text-align: right;
+}
 body {
 	background-color: white;
 }
-h1 {
-	color: white;
+h1, h2 {
+	color: black;
+	font-family: 'Libre Baskerville', serif;
+	text-shadow: 1px 1px white;
 }
 
-h2, p, label, option {
+ p, label, option {
 	font-family: 'Libre Baskerville', serif;
 	color: #778899;
 }
@@ -73,7 +84,7 @@ select {
 
 }
 
-.names {
+.label-stayle-2 {
  display: inline-block;
  margin: .5em;
 }
@@ -99,9 +110,54 @@ fieldset {
 	border-top: solid 3px #3cb371;
 }
 
+footer {
+	text-align: center;
+}
+
 
 @media screen and (min-width: 768px) {
 
+body {
+	position: relative;
+}
+
+
+
+form {
+	max-width: 768px;
+	margin: 0 auto;
 	
+	
+
+	}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"], select {
+	width: 75%;
+	float: right;
+	margin: auto;
+}
+
+.div-style-1 {
+	margin-bottom: 2em;
+}
+
+.label-style-1 {
+	display: inline-block;
+	padding: 1em 0;
+}
+
+.zip-code {
+	display: inline-block;
+	padding: 1em 0;
+	float: left;
+	margin-right: 6.5em;
+}
+
+#zip {
+	width: 25%;
+	float: left
+}	
 
 }
