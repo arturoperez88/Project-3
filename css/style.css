@@ -1,3 +1,4 @@
+/********* Universal Styles ****************/
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -12,29 +13,36 @@
 
 ::-webkit-input-placeholder {
 	text-align: right;
-}
-body {
-	background-color: white;
-}
-h1, h2 {
-	color: black;
-	font-family: 'Libre Baskerville', serif;
-	text-shadow: 1px 1px white;
+	font-style: italic;
 }
 
+/********* Text Styles ****************/
+
+h1 {
+	color: #3cb371;
+	font-family: 'Libre Baskerville', serif;
+	text-shadow: 1px 1px white; 
+}
+
+h2 {
+	color: black;
+	font-family: 'Libre Baskerville', serif;
+	text-shadow: 1px 1px #3cb371;
+}
  p, label, option {
 	font-family: 'Libre Baskerville', serif;
 	color: #778899;
 }
 
+/********* Header Area Styles ****************/
 
 #header-area {
 	text-align: center;
-	border-bottom: solid 6px #3cb371;
+	margin-bottom: .4em;
 }
 
 #main-header {
-	background-color: #3cb371;
+	background-color:black;
 	margin: 0;
 	padding: 1em 0;
 }
@@ -45,13 +53,36 @@ h1, h2 {
 }
 
 #sub-header {
-	margin-bottom: 3em;
+	padding-bottom: 3em;
+	border-bottom: solid 6px #3cb371;
 }
+
+/********* Form Styles ****************/
 
 fieldset {
 	border: none;
+	margin: 0 0 1em 0; 
+	padding-left: 0;
+	padding-right: 0;
+	padding-bottom: 
 }
 
+
+legend {
+	padding: 1em 0 1em 0;
+	margin: 0;
+	border-top: solid 3px #3cb371;
+	font-weight: bold;
+	font-size: 24px;
+	width: 100%;
+	text-shadow: 1px 1px #3cb371 ;
+}
+
+input:focus, 
+textarea:focus,
+select:focus {
+	outline: none;
+}
 
 input[type="text"],
 input[type="email"],
@@ -69,6 +100,18 @@ select, textarea {
   margin-bottom: 2.5em;
   margin-top: .75em;
 }
+
+input[type=checkbox]:checked + label,
+input[type=radio]:checked + label {
+	color: black;
+	font-weight: bold;
+	text-shadow: 1px 1px #3cb371;
+}
+
+#other-topics {
+	margin-bottom: 1em;
+}
+
 .zip-code {
 	display: block;
 }
@@ -81,7 +124,6 @@ select, textarea {
 select {
 	height: 3em;
 	border-radius: .5em;
-
 }
 
 .label-stayle-2 {
@@ -98,37 +140,40 @@ button {
 	width: 100%;
 	height: 4.5em;
 	border-radius: .5em;
-	background-color: #3cb371;
-	font-size: 16px;
-	font-weight: 2em;
-	color: white;
+	background-color: black;
+	font-size: 20px;
+	font-weight: bold;
+	color: #3cb371;
 	cursor: pointer;
+	text-shadow: 1px 1px white; 
+	border: none;
 }
 
-fieldset {
-	margin-top: 6px;
-	border-top: solid 3px #3cb371;
-}
+/********* Footer Styles ****************/
 
 footer {
 	text-align: center;
 }
 
+/********* Media Queries  ****************/
 
 @media screen and (min-width: 768px) {
 
-body {
-	position: relative;
-}
+/********* Header area Styles ****************/
 
+	#main-header {
+		max-width: 100%;
+	}
 
+	#sub-header {
+		max-width: 768px;
+		margin: 0 auto;
+	}
 
-form {
+/********* Form area Styles ****************/
+	form {
 	max-width: 768px;
 	margin: 0 auto;
-	
-	
-
 	}
 
 input[type="text"],
@@ -152,7 +197,7 @@ input[type="tel"], select {
 	display: inline-block;
 	padding: 1em 0;
 	float: left;
-	margin-right: 6.5em;
+	margin-right: 7.2em;
 }
 
 #zip {
