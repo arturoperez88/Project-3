@@ -53,11 +53,18 @@ h2 {
 }
 
 #sub-header {
+	margin:  0 1em;
 	padding-bottom: 3em;
-	border-bottom: solid 6px #3cb371;
 }
 
 /********* Form Styles ****************/
+hr {
+	border: solid 3px #3cb371;
+}
+
+form {
+	padding: 0 1em;
+}
 
 fieldset {
 	border: none;
@@ -171,6 +178,7 @@ footer {
 	}
 
 /********* Form area Styles ****************/
+
 	form {
 	max-width: 768px;
 	margin: 0 auto;
