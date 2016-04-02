@@ -15,6 +15,12 @@
 	text-align: right;
 	font-style: italic;
 }
+	
+ #other-topics::-webkit-input-placeholder,
+ #why-programing::-webkit-input-placeholder {
+	text-align: left;
+	font-style: italic;
+}
 
 /********* Text Styles ****************/
 
@@ -32,6 +38,11 @@ h2 {
  p, label, option {
 	font-family: 'Libre Baskerville', serif;
 	color: #778899;
+}
+
+input, 
+textarea {
+	font-family: 'Libre Baskerville', serif;
 }
 
 /********* Header Area Styles ****************/
@@ -73,7 +84,6 @@ fieldset {
 	padding-right: 0;
 }
 
-
 legend {
 	padding: 1em 0 1em 0;
 	margin: 0;
@@ -88,6 +98,8 @@ input:focus,
 textarea:focus,
 select:focus {
 	outline: none;
+	box-shadow: inset 0px 0px 15px #3cb371 ;
+	transition: .5s;
 }
 
 input[type="text"],
@@ -109,9 +121,9 @@ select, textarea {
 
 input[type=checkbox]:checked + label,
 input[type=radio]:checked + label {
-	color: black;
-	font-weight: bold;
 	text-shadow: 1px 1px #3cb371;
+	color: black;
+	transition: .5s;
 }
 
 #other-topics {
@@ -140,6 +152,13 @@ select {
 input[type="checkbox"],
 input[type="radio"] {
 	cursor: pointer;
+	box-shadow: none;
+}
+
+.textarea-labels {
+	display: block;
+	float: left;
+	margin: 1em 0;
 }
 
 button {
@@ -204,12 +223,12 @@ input[type="tel"], select {
 	display: inline-block;
 	padding: 1em 0;
 	float: left;
-	margin-right: 7.2em;
+	margin-right: 6.8em;
 }
 
 #zip {
-	width: 25%;
-	float: left
+	width: 28%;
+	float: left;
 }	
 
 }
