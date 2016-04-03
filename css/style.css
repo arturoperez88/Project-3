@@ -28,12 +28,14 @@ h1 {
 	color: #3cb371;
 	font-family: 'Libre Baskerville', serif;
 	text-shadow: 1px 1px white; 
+	font-size: 30px;
 }
 
 h2 {
 	color: black;
 	font-family: 'Libre Baskerville', serif;
 	text-shadow: 1px 1px #3cb371;
+	font-size: 26px;
 }
  p, label, option {
 	font-family: 'Libre Baskerville', serif;
@@ -180,7 +182,7 @@ footer {
 	text-align: center;
 }
 
-/********* Media Queries  ****************/
+/********* Media Queries Tablet  ****************/
 
 @media screen and (min-width: 768px) {
 
@@ -230,5 +232,41 @@ input[type="tel"], select {
 	width: 28%;
 	float: left;
 }	
+
+}
+
+/********* Media Queries Desktop ****************/
+
+@media screen and (min-width: 1024px) {
+
+/********* Universal styles ****************/
+
+::-webkit-input-placeholder {
+	font-size: 14px;
+}
+
+/********* Header Area Styles ****************/
+
+#main-header h1 {
+	font-size: 26px;
+	transition: 1s;
+}
+
+#sub-header h2 {
+	font-size: 30px;
+	transition: 1s;
+}
+/********* footer Area Styles ****************/
+
+footer {
+	max-width: 768px;
+	height: auto;
+}
+
+footer p {
+	margin-bottom: 0;
+	padding-bottom: 1.5em;
+}
+
 
 }
