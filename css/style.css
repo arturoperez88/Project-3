@@ -25,16 +25,14 @@
 /********* Text Styles ****************/
 
 h1 {
-	color: #3cb371;
+	color: white;
 	font-family: 'Libre Baskerville', serif;
-	text-shadow: 1px 1px white; 
 	font-size: 30px;
 }
 
 h2 {
 	color: black;
 	font-family: 'Libre Baskerville', serif;
-	text-shadow: 1px 1px #3cb371;
 	font-size: 26px;
 }
  p, label, option {
@@ -55,7 +53,7 @@ textarea {
 }
 
 #main-header {
-	background-color:black;
+	background-color:#0080ff;
 	margin: 0;
 	padding: 1em 0;
 }
@@ -72,7 +70,7 @@ textarea {
 
 /********* Form Styles ****************/
 hr {
-	border: solid 3px #3cb371;
+	border: solid 3px #0080ff;
 }
 
 form {
@@ -89,18 +87,16 @@ fieldset {
 legend {
 	padding: 1em 0 1em 0;
 	margin: 0;
-	border-top: solid 3px #3cb371;
+	border-top: solid 3px #0080ff;
 	font-weight: bold;
 	font-size: 24px;
 	width: 100%;
-	text-shadow: 1px 1px #3cb371 ;
 }
 
 input:focus, 
 textarea:focus,
 select:focus {
 	outline: none;
-	box-shadow: inset 0px 0px 15px #3cb371 ;
 	transition: .5s;
 }
 
@@ -123,7 +119,6 @@ select, textarea {
 
 input[type=checkbox]:checked + label,
 input[type=radio]:checked + label {
-	text-shadow: 1px 1px #3cb371;
 	color: black;
 	transition: .5s;
 }
@@ -167,14 +162,15 @@ button {
 	width: 100%;
 	height: 4.5em;
 	border-radius: .5em;
-	background-color: black;
+	background-color: #0080ff;
 	font-size: 20px;
 	font-weight: bold;
-	color: #3cb371;
+	color: white;
 	cursor: pointer;
-	text-shadow: 1px 1px white; 
 	border: none;
+	transition: .5s;
 }
+
 
 /********* Footer Styles ****************/
 
@@ -248,7 +244,7 @@ input[type="tel"], select {
 /********* Header Area Styles ****************/
 
 #main-header h1 {
-	font-size: 26px;
+	font-size: 36px;
 	transition: 1s;
 }
 
@@ -266,6 +262,9 @@ footer {
 footer p {
 	margin-bottom: 0;
 	padding-bottom: 1.5em;
+}
+button{
+	font-size: 30px;
 }
 
 
